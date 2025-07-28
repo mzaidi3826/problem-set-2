@@ -47,7 +47,7 @@ def catplot_nonfelony_prediction(pred_with_felony):
     plt.clf()
     
 # In a print statement, answer the following question: What might explain the difference between the plots?
-print("Question 1 Answer:")
+print("Part 4 Question 1 Answer:")
 print("The difference may be due to the model predicting higher felony rearrest risk for those with current felony charges.")
 
 # 3. Repeat the plot from 1, but hue by whether the person actually got rearrested for a felony crime
@@ -67,5 +67,5 @@ def catplot_felony_prediction_with_actual(pred_with_felony):
 # What does it mean that prediction for arrestees with a current felony charge, 
 # but who did not get rearrested for a felony crime have a higher predicted probability than arrestees with a current misdemeanor charge, 
 # but who did get rearrested for a felony crime?
-print("Question 2 Answer:")
+print("Part 4 Question 2 Answer:")
 print("It means that that the predictive model might be heavily weighting the initial charge type (felony vs. misdemeanor) more than the actual outcome (felony rearrest vs. no felony rearrest) when determining the predicted probability of a felony rearrest.")
