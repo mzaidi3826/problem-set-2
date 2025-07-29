@@ -51,6 +51,8 @@ def main():
     part5.scatterplot_predictions_by_charge(pred_with_felony)
     # 2
     part5.scatterplot_felony_prediction_vs_outcome(pred_with_felony)
+    
+    print("All parts completed successfully. All plots saved.")
 
 if __name__ == "__main__":
     main()

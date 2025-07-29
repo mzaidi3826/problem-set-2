@@ -55,7 +55,7 @@ def catplot_felony_prediction_with_actual(pred_with_felony):
     sns.catplot(data=pred_with_felony,
                 x='has_felony_charge',
                 y='prediction_felony',
-                hue='label_felony',
+                hue='y_felony',
                 kind='bar')
     plt.title('Felony Prediction by Charge Type and Actual Rearrest')
     plt.xlabel('Has Felony Charge')

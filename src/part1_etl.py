@@ -14,8 +14,6 @@ def create_directories(directories):
     Args:
         directories (list of str): A list of directory paths to create.
     """
-    
-    
     for directory in directories:
         os.makedirs(directory, exist_ok=True)
 
@@ -44,5 +42,5 @@ def extract_transform():
 
     # Merge felony_charge with pred_universe
     pred_with_felony = pred_universe.merge(felony_charge, on='arrest_id', how='left')
-    
+     
     return pred_universe, arrest_events, charge_counts, charge_counts_by_offense, felony_charge, pred_with_felony

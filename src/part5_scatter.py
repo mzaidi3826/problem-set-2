@@ -29,7 +29,7 @@ print("The cluster of dots on the right side likely represents individuals with 
 def scatterplot_felony_prediction_vs_outcome(pred_with_felony):
     sns.stripplot(data=pred_with_felony,
                   x='prediction_felony',
-                  y='label_felony',
+                  y='y_felony',
                   jitter=True,
                   alpha=0.4)
     plt.title('Prediction vs Actual Felony Rearrest')

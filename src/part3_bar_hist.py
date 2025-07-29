@@ -5,6 +5,7 @@ PART 3: BAR PLOTS AND HISTOGRAMS
 - All plots should be output as PNG files to `data/part3_plots`
 '''
 
+import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
